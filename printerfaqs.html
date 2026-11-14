@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20 Printer FAQs</title>
+    <style>
+
+        /*Fonts used across all pages. Part of template.*/
+        @font-face 
+        {
+            font-family: 'EXPEND-Bold';
+            src: url(fonts/EXPEND-Bold.otf);
+        }
+        @font-face 
+        {
+            font-family: 'Thamire';
+            src: url(fonts/Thamire.otf);
+        }
+
+        @font-face 
+        {
+            font-family: 'Shield';
+            src: url(fonts/Shield.otf);
+        }
+
+        /*Styles the header across all pages. Part of template.*/
+        header
+        {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border: 2px solid white;
+            border-radius:2px;
+        }
+
+        header h1 /*Styles the slogan. Part of template.*/
+        {
+            color: white;
+            font-size: 36px;
+            text-align:center;
+            font-family:EXPEND-bold, Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        header td /*Styles the navigation bar across all pages. Part of template.*/
+        {
+            background-color: black;
+            color: white;
+            border: 2px solid white;
+            border-radius:2px;
+        }
+
+        .logo /*Styles the logo across all pages. Part of template.*/
+        {
+            float:left;
+            margin-right:20px;
+        }
+        
+        body /*Designates the background image for the website. Part of template.*/
+        {
+            background-image: url("images/websitebackground2.png");
+        }
+
+        .faqstitle /*Styles the title of the FAQs table. Also helps to show what page the user is on.*/
+        {
+            text-align: center;
+            font-size:24px;
+            font-family:EXPEND-bold, Verdana, Geneva, Tahoma, sans-serif;
+            color:white;
+            background-color:black;
+            border:2px dotted white;
+            border-radius:4px;
+            margin-left:25%;
+            margin-right:25%;
+            margin-top:40px;
+            margin-bottom:40px;
+            padding:30px;
+            
+        }
+        tr, th, td /*Styles the content inside the FAQs table*/
+        {
+            border: 2px solid white;
+            color:rgb(221, 221, 221);
+            border-collapse: separate;
+            border-radius:8px;
+            font-family:Shield, Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .faqstable /*Styles the FAQs table*/
+        {
+            width:70%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color:black;
+        }
+        tr /*Sets font of content inside the FAQs tables*/
+        {
+            font-size:18px;
+        }
+        a /*Indicate places to where links are in green. Part of template.*/
+        {
+            color: rgb(77, 224, 77);
+            text-decoration: none;
+        }
+        a:hover /*Changes color of links when hovered over. Part of template.*/
+        {
+            color:black;
+            background-color: goldenrod;
+        }
+        li /*Styles bullet points of FAQs table*/
+        {
+            text-align: left;
+        }
+        .navigationbar /*Styles the navigation bar across all pages. Part of template.*/
+        {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navoptions /*Styles the content inside the navigation bar. Part of template.*/
+        {
+            font-size:24px;
+            display: inline;
+            text-align:center;
+            color: white;
+            color: rgb(77, 224, 77);
+            text-decoration: none;
+            font-family:EXPEND-bold, Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        footer /*Makes the footer sticky as you scroll down on the page. Part of template.*/
+        {
+            position: sticky;
+            bottom:0;
+            font-size: 16px;
+            padding:2px;
+            color:white;
+            background-color:black;
+            border: 2px solid white;
+            text-align:center;
+            font-family:EXPEND-bold, Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+    </style>
+</head>
+
+<body>
+<header>
+    <!--Website logo & slogan. Part of template.-->
+        <a href="https://progressiveoverlearn.wordpress.com/"><img class="logo" src="images/progressiveoverlearn.png" alt="Progressive Overlearn"></a>
+        <h1>Exercise Yourself For A Stronger Future</h1>
+
+    <!--Navigation set into 1 Table for organization & styling. Part of template.-->
+    <table style="width:100%; text-align:center">
+        <tr>
+            <ul class="navigationbar">
+            <td><li class="navoptions"><a href="home.html">Home</a></li></td>
+            <td><li class="navoptions"><a href="aboutme.html">About Me</a></li></td>
+            <td><li class="navoptions"><a href="printerhelpguide.html">Printer Help Guide</a></li></td>
+            <td><li class="navoptions"><a href="printerflowchart.html">Printer Flowchart</a></li></td>
+            <td><li class="navoptions"><a href="printerfaqs.html">Printer FAQs</a></li></td>
+            <td><li class="navoptions"><a href="signup.html">Sign Up</a></li></td>
+            </ul>
+        </tr>
+    </table>
+</header>
+
+    <!--FAQs title and table.-->
+    <h2 class="faqstitle">↓ Here Are 20 Common Printer FAQs Below ↓</h1>
+    <table class="faqstable">
+    <div id="tabledesign"
+        <tr class="header">
+            <th>Question</th>
+            <th>Possible Solutions</th>
+            <th>Resource</th>
+        </tr> 
+        <tr>
+            <th>Why is my printer not printing?</th>
+            <th><ul>
+                <li>Check the connections of your computer and printer.</li>
+                <li>Ensure the printer is plugged in and turned on.</li>
+                <li>The paper must be properly loaded into the paper tray.</li>
+              </ul> 
+            </th>
+            <th><a href="https://wizixtech.com/solution-for-printer-is-not-responding/">Click Here For More Information</a></th>
+        </tr>
+        <tr>
+            <th>How do I find my printer’s error messages?</th>
+            <th>
+                <ul>
+                    <li>Look for the printer’s display panel and see if any messages are on there.</li>
+                    <li>They should say an error code and what the error is.</li>
+                    <li>They may be associated with the printer or fax machine, if applicable.</li>
+                </ul> 
+            </th>
+            <th><a href="https://www.cartridgepeople.com/info/printer-error-codes/brother">Click Here For More Information</a></th>
+        </tr>
+        <tr>
+            <th>Why is my printer not turning on?</th>
+            <th>
+                <ul>
+                    <li>Ensure the printer is plugged in and connected into a wall socket.</li>
+                    <li>Try using another wire if it’s still not turning on.</li>
+                    <li>Also try connecting into another socket.</li>
+                </ul> 
+            </th>
+            <th><a href="https://wizixtech.com/solution-for-printer-is-not-responding/">Click Here For More Information</a></th>
+        </tr>
+        <tr>
+            <th>Why is my printer printing blank pages?</th>
+            <th>
+                <ul>
+                    <li>There are multiple possible reasons. Ink may be low or empty.</li>
+                    <li>Also check your print preview to make sure it shows what is supposed to be printed.</li>
+                    <li>The print head may need to be cleaned as well.</li>
+                </ul> 
+            </th>
+            <th><a href="https://www.printerland.co.uk/blog/printer-printing-blank-pages/">Click Here For More Information</a></th>
+        </tr>
+        <tr>
+            <th>Why is my printer so slow?</th>
+            <th>
+                <ul>
+                    <li>Other users may be trying to print as well, causing the queue to load up significantly.</li>
+                    <li>Printer drivers may need to be updated.</li>
+                    <li>If you’re trying to print a large document, such as a picture, consider reducing the print quality.</li>
+                </ul> 
+            </th>
+            <th><a href="https://www.imageoneway.com/blog/why-is-my-printer-taking-so-long-to-print">Click Here For More Information</a></th>
+        </tr>
+        <tr>
+            <th>Why is my printer printing blurry pages?</th>
+            <th>
+                <ul>
+                    <li>Check the ink levels of your printer. Ensure it is not low.</li>
+                    <li>The paper loaded into the printer should be designed for printing, dry, and free of wrinkles.</li>
+                    <li>The printer head may need to be cleaned.</li>
+                </ul> 
+            </th>
+            <th><a href="https://www.paperpapers.com/news/printer-printing-blurry/?srsltid=AfmBOoqPvk-ccLzYsaLAwjd7isqd5wbLlgqgj802RVxeTPnERMrxYKn-">Click Here For More Information</a></th>
+        </tr>
+        <tr>
+            <th>How I do change my printing color?</th>
+            <th>
+                <ul>
+                    <li>There are multiple ways to do this. In an application like Microsoft Word, you can go to File -> Print -> Printer Properties of your printer.</li>
+                    <li>You should see options of “Black & White” & “Color”.</li>
+                    <li>Through an operating system like Windows 11, it can be done from “Settings” -> “Printers & Scanners”. Click your printer name and then select Printer Preferences -> Paper/Quality to change the printing color.</li>
+                </ul> 
+            </th>
+            <th><a href="https://it.cornell.edu/printerlogic/set-your-printer-color-or-black-and-white-printing">Click Here For More Information</a></th>
+        </tr>
+        <tr>
+            <th>How do I know if my printer’s ink is low?</th>
+            <th>
+                <ul>
+                    <li>When printing, there should be notifications on your computer screen and printer display saying the ink is low.</li>
+                    <li>You should also see icons and percentages to indicate how low they are.</li>
+                    <li>It may be noticed by printing blurry documents.</li>
+                </ul> 
+            </th>
+            <th><a href="https://www.hp.com/us-en/shop/tech-takes/how-to-check-ink-or-toner-levels-on-your-hp-printer">Click Here For More Information</a></th>
+        </tr>
+        <tr>
+            <th>Why is my printer not being seen by my computer?</th>
+            <th>
+                <ul>
+                    <li>Check the connections between the computer and printer. If wired, ensure the connections are tight.</li>
+                    <li>If wireless, they should both be connected to the same network as each other.</li>
+                    <li>Consider trying a different wire or port.</li>
+                </ul> 
+            </th>
+            <th><a href="https://support.microsoft.com/en-us/windows/fix-printer-connection-and-printing-problems-in-windows-fb830bff-7702-6349-33cd-9443fe987f73#:~:text=Printer%20not%20found%20or%20recognized,the%20printer%20to%20your%20PC.">Click Here For More Information</a></th>
+        </tr>
+        <tr>
+            <th>How do I know if I’m putting paper correctly into my printer?</th>
+            <th>
+                <ul>
+                    <li>Insert and line up the paper with the guides into the paper feed inside the tray.</li>
+                    <li>Ensure the paper is dry, free of wrinkles, and fits into the tray.</li>
+                    <li>Also make sure the tray is not overloaded to prevent paper jams.</li>
+                </ul> 
+            </th>
+            <th><a href="https://bdsdoc.com/kb-articles/how-to-put-paper-in-a-printer/">Click Here For More Information</a></th>
+        </tr>
+        <tr>
+            <th>How do I print a test page from my printer?</th>
+            <th>
+                <ul>
+                    <li>On your computer, go into Settings -> Printers & Scanners.</li>
+                    <li>Look for and click on your printer to look for options.</li>
+                    <li>Choose “Print Test Page”.</li>
+                </ul> 
+            </th>
+            <th><a href="https://www.dell.com/support/kbdoc/en-us/000123918/how-to-print-a-test-page-in-windows">Click Here For More Information</a></th>
+        </tr>
+        <tr>
+            <th>How do I see my printer’s queue?</th>
+            <th>
+                <ul>
+                    <li>On your computer, go into Settings -> Printers & Scanners.</li>
+                    <li>From there, click on your printer to see an option to open the printer queue.</li>
+                    <li>You can also find it on your printer’s display panel and find an option to see the queue from its main menu.</li>
+                </ul> 
+            </th>
+            <th><a href="https://support.microsoft.com/en-us/windows/view-a-printer-s-print-queue-in-windows-71505b3a-ba6b-14b2-b7f9-fd6204675ab5#:~:text=drop%2Ddown%20menu.-,Right%2Dclick%20on%20the%20Start%20menu%20and%20then%20select,%3E%20Devices%20%3E%20Printers%20&%20scanners%20.&text=In%20the%20Printers%20&%20Scanners%20window,select%20the%20Open%20queue%20button.">Click Here For More Information</a></th>
+        </tr>
+        <tr>
+            <th>How do I replace my printer’s ink cartridges?</th>
+            <th>
+                <ul>
+                    <li>Open the ink cartridge cover of the printer by pulling it back with one hand.</li>
+                    <li>On the top of the cartridges to replace, press down on its lever to pull it out.</li>
+                    <li>Then push in the new cartridges to replace. Ensure they fit and are compatible with the printer.</li>
+                </ul> 
+            </th>
+            <th><a href="https://support.brother.com/g/b/faqend.aspx?c=us&lang=en&prod=mfcj1010dw_us_eu_as&ftype3=1964&faqid=faq00000230_028">Click Here For More Information</a></th>
+        </tr>
+        <tr>
+            <th>The printer is not scanning my document. What should I do?</th>
+            <th>
+                <ul>
+                    <li>Make sure the paper is properly placed into the scanner unit.</li>
+                    <li>If you’re attempting to scan through a network, check to see if there’s a stable connection between the printer and computer.</li>
+                    <li>Ink levels may also need to be checked.</li>
+                </ul> 
+            </th>
+            <th><a href="https://support.brother.com/g/b/faqend.aspx?c=us&lang=en&prod=hl2280dw_us&faqid=faq00002637_010">Click Here For More Information</a></th>
+        </tr>
+        <tr>
+            <th>I updated my computer, but I am no longer able to print. What can be done?</th>
+            <th>
+                <ul>
+                    <li>Check the printer drivers. They may be outdated and require you to update them.</li>
+                    <li>Verify there’s a connection between the printer and computer.</li>
+                    <li>You can also try restarting the printer spooler on Windows by typing “Services” into the search bar, highlight “Printer Spooler”, then right-click on it to choose the “Restart” option.</li>
+                </ul> 
+            </th>
+            <th><a href="https://support.hp.com/us-en/help/windows-10-support-center-printing#:~:text=Printer%20Issues%20After%20Updating%20Windows%2010&text=To%20Restart%2C%20click%20the%20lower,is%20compatible%20with%20Windows%2010.&text=If%20your%20printer%20is%20compatible,to%20detect%20and%20fix%20isses.">Click Here For More Information</a></th>
+        </tr>
+        <tr>
+            <th>I made a copy for my document, but the copy is blank. Why is that?</th>
+            <th>
+                <ul>
+                    <li>The document may be facing the wrong way, causing it to copy the blank side.</li>
+                    <li>Ink levels may possibly be low.</li>
+                    <li>The print head may also need to be cleaned.</li>
+                </ul> 
+            </th>
+            <th><a href="https://www.printerland.co.uk/blog/printer-printing-blank-pages/">Click Here For More Information</a></th>
+        </tr>
+        <tr>
+            <th>Why is my printer having a paper jam?</th>
+            <th>
+                <ul>
+                    <li>The paper loaded into the printer may be loaded incorrectly.</li>
+                    <li>There may be too much paper loaded into the paper tray.</li>
+                    <li>The paper size or type may also be incorrect and not designed for the printing you want to do.</li>
+                </ul> 
+            </th>
+            <th><a href="https://support.hp.com/za-en/help/printer/paper-jam#:~:text=Paper%20jams%20can%20occur%20for%20a%20variety,can%20be%20another%20cause%20of%20paper%20jams.">Click Here For More Information</a></th>
+        </tr>
+        <tr>
+            <th>I have multiple print jobs, but they are stuck in the queue. What should I try?</th>
+            <th>
+                <ul>
+                    <li>Check your printer’s panel screen and look for an option to check the printer queue.</li>
+                    <li>They may be waiting to be printed while another job is ongoing.</li>
+                    <li>The printer may have low ink and paper while printing other jobs.</li>
+                </ul> 
+            </th>
+            <th><a href="https://support.hp.com/us-en/help/printer/print-job-stuck">Click Here For More Information</a></th>
+        </tr>
+        <tr>
+            <th>How do I find drivers for my printer?</th>
+            <th>
+                <ul>
+                    <li>On Windows, you can right-click the Start icon and choose Device Manager.</li>
+                    <li>From there, look for Printers and select that to find the name of your printer.</li>
+                    <li>On a MAC, find the Apple button. Choose System Preferences -> Printers & Scanners. Choose your printer, then Options and Supplies.</li>
+                </ul> 
+            </th>
+            <th><a href="https://www.redrivercatalog.com/infocenter/how-to-find-your-printer-driver-version-in-the-windows-1-2.html?srsltid=AfmBOoqb5BsXjH98BgJfP34JD1acOBNeO5y1KE4WBcYCToCVOPD70hnw">Click Here For More Information</a></th>
+        </tr>
+        <tr>
+            <th>I am using an application, but it is not letting me print. What can be done?</th>
+            <th>
+                <ul>
+                    <li>The app may need to be updated to the latest version.</li>
+                    <li>The application may need to be restarted, but ensure you save your wanted work first.</li>
+                    <li>It could also simply be that the computer and printer are not connected to each other.</li>
+                </ul> 
+            </th>
+            <th><a href="https://support.microsoft.com/en-us/windows/fix-printer-connection-and-printing-problems-in-windows-fb830bff-7702-6349-33cd-9443fe987f73#:~:text=Cannot%20print%20from%20specific%20applications,like%20margins%20or%20paper%20size).">Click Here For More Information</a></th>
+        </tr>
+    </div>
+    </table>
+
+    <!--Footer across all pages. Part of template.-->
+    <footer>
+        <p>Progressive Overlearn © 2025. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        
+        /*Fonts used across all pages. Part of template.*/
+        @font-face 
+        {
+            font-family: 'EXPEND-Bold';
+            src: url(fonts/EXPEND-Bold.otf);
+        }
+        @font-face 
+        {
+            font-family: 'Thamire';
+            src: url(fonts/Thamire.otf);
+        }
+
+        @font-face 
+        {
+            font-family: 'Shield';
+            src: url(fonts/Shield.otf);
+        }
+
+        /*Styles the header across all pages. Part of template.*/
+        header
+        {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border: 2px solid white;
+            border-radius:2px;
+        }
+
+        header h1 /*Styles the slogan. Part of template.*/
+        {
+            color: white;
+            font-size: 36px;
+            text-align:center;
+            font-family:EXPEND-bold, Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        header td /*Styles the navigation bar across all pages. Part of template.*/
+        {
+            background-color: black;
+            color: white;
+            border: 2px solid white;
+            border-radius:2px;
+        }
+
+        .logo /*Styles the logo across all pages. Part of template.*/
+        {
+            float:left;
+            margin-right:20px;
+        }
+        
+        body /*Designates the background image for the website. Part of template.*/
+        {
+            background-image: url("images/websitebackground2.png");
+        }
+        /*Styles the introduction of the current page*/
+        #currentpage
+        {
+            text-align:center;
+            font-size:24px;
+            font-family:EXPEND-bold, Verdana, Geneva, Tahoma, sans-serif;
+            color:white;
+            background-color:black;
+            border:2px dotted white;
+            border-radius:4px;
+            margin-left:20%;
+            margin-right:20%;
+            margin-top:40px;
+            margin-bottom:40px;
+            padding:30px;
+        }
+
+        /*Styles the contents of the page.*/
+        #details
+        {
+            width:70%;
+            margin-left:auto;
+            margin-right:auto;
+            font-size:16px;
+            font-family:EXPEND-bold, Verdana, Geneva, Tahoma, sans-serif;
+            color:black;
+            background-color:rgb(77, 224, 77);
+            border:2px solid white;
+            border-radius:4px;
+            margin-top:40px;
+            margin-bottom:40px;
+            display:table;
+        }
+        
+        a /*Indicate places to where links are in green. Part of template.*/
+        {
+            color: rgb(77, 224, 77);
+            text-decoration: none;
+        }
+        a:hover /*Changes color of links when hovered over. Part of template.*/
+        {
+            color:black;
+            background-color: goldenrod;
+        }
+        li /*Styles bullet points of FAQs table*/
+        {
+            text-align: left;
+        }
+        .navigationbar /*Styles the navigation bar across all pages. Part of template.*/
+        {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navoptions /*Styles the content inside the navigation bar. Part of template.*/
+        {
+            font-size:24px;
+            display: inline;
+            text-align:center;
+            color: white;
+            color: rgb(77, 224, 77);
+            text-decoration: none;
+            font-family:EXPEND-bold, Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        footer /*Makes the footer sticky as you scroll down on the page. Part of template.*/
+        {
+            position: sticky;
+            bottom:0;
+            font-size: 16px;
+            padding:2px;
+            color:white;
+            background-color:black;
+            border: 2px solid white;
+            text-align:center;
+            font-family:EXPEND-bold, Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+    </style>
+</head>
+
+<body>
+<header>
+    <!--Website logo & slogan. Part of template.-->
+        <a href="https://progressiveoverlearn.wordpress.com/"><img class="logo" src="images/progressiveoverlearn.png" alt="Progressive Overlearn"></a>
+        <h1>Exercise Yourself For A Stronger Future</h1>
+
+    <!--Navigation set into 1 Table for organization & styling. Part of template.-->
+    <table style="width:100%; text-align:center">
+        <tr>
+            <ul class="navigationbar">
+            <td><li class="navoptions"><a href="home.html">Home</a></li></td>
+            <td><li class="navoptions"><a href="aboutme.html">About Me</a></li></td>
+            <td><li class="navoptions"><a href="printerhelpguide.html">Printer Help Guide</a></li></td>
+            <td><li class="navoptions"><a href="printerflowchart.html">Printer Flowchart</a></li></td>
+            <td><li class="navoptions"><a href="printerfaqs.html">Printer FAQs</a></li></td>
+            <td><li class="navoptions"><a href="signup.html">Sign Up</a></li></td>
+            </ul>
+        </tr>
+    </table>
+</header>
+
+<h1 id="currentpage">Learn More About Me Here</h1>
+
+<table id="details">
+    <tr>
+        <td><img style="height:500px; width:400px;" src="images/profilepicture.jpg" alt="profile picture"</img></td>
+        <td><p style="margin-left:5px;">Who am I? Miguel Melendez<br><br>
+    What are my hobbies? Playing video games, going to the gym, travelling, playing and watching sports, and tinkering with technology.<br><br>
+    What do I do? I am a student at the Just A Start Program in Cambridge, MA. I am also an afterschool instructor and blogger.<br><br>
+    What am I learning at Just A Start? A lot! Critical thinking, customer service, teamwork, configuring switches and routers, computer assembly and disassembly, working with multiple operating systems, and even web design!<br><br>
+    What do I want to achieve after Just A Start? There are multiple things. Staying committed to learning, getting better at using technology, and creating content designed to assist people with technological issues.<br><br>
+    What is my dream job? Being an IT professional at a school.<br><br>
+    </p></td>
+    </tr>
+</table>
+
+    <!--Footer across all pages. Part of template.-->
+<footer>
+        <p>Progressive Overlearn © 2025. All rights reserved.</p>
+</footer>
+</body>
+</html>

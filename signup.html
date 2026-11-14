@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+
+        /*Fonts used across all pages. Part of template.*/
+        @font-face 
+        {
+            font-family: 'EXPEND-Bold';
+            src: url(fonts/EXPEND-Bold.otf);
+        }
+        @font-face 
+        {
+            font-family: 'Thamire';
+            src: url(fonts/Thamire.otf);
+        }
+
+        @font-face 
+        {
+            font-family: 'Shield';
+            src: url(fonts/Shield.otf);
+        }
+
+        /*Styles the header across all pages. Part of template.*/
+        header
+        {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border: 2px solid white;
+            border-radius:2px;
+        }
+
+        header h1 /*Styles the slogan. Part of template.*/
+        {
+            color: white;
+            font-size: 36px;
+            text-align:center;
+            font-family:EXPEND-bold, Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        header td /*Styles the navigation bar across all pages. Part of template.*/
+        {
+            background-color: black;
+            color: white;
+            border: 2px solid white;
+            border-radius:2px;
+        }
+
+        .logo /*Styles the logo across all pages. Part of template.*/
+        {
+            float:left;
+            margin-right:20px;
+        }
+        
+        body /*Designates the background image for the website. Part of template.*/
+        {
+            background-image: url("images/websitebackground2.png");
+        }
+
+        a /*Indicate places to where links are in green. Part of template.*/
+        {
+            color: rgb(77, 224, 77);
+            text-decoration: none;
+        }
+        a:hover /*Changes color of links when hovered over. Part of template.*/
+        {
+            color:black;
+            background-color: goldenrod;
+        }
+        li /*Styles bullet points of FAQs table*/
+        {
+            text-align: left;
+        }
+        .navigationbar /*Styles the navigation bar across all pages. Part of template.*/
+        {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navoptions /*Styles the content inside the navigation bar. Part of template.*/
+        {
+            font-size:24px;
+            display: inline;
+            text-align:center;
+            color: white;
+            color: rgb(77, 224, 77);
+            text-decoration: none;
+            font-family:EXPEND-bold, Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        footer /*Makes the footer sticky as you scroll down on the page. Part of template.*/
+        {
+            position: sticky;
+            bottom:0;
+            font-size: 16px;
+            padding:2px;
+            color:white;
+            background-color:black;
+            border: 2px solid white;
+            text-align:center;
+            font-family:EXPEND-bold, Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /*Styles the introduction of the current page*/
+        #currentpage
+        {
+            text-align:center;
+            font-size:24px;
+            font-family:EXPEND-bold, Verdana, Geneva, Tahoma, sans-serif;
+            color:white;
+            background-color:black;
+            border:2px dotted white;
+            border-radius:4px;
+            margin-left:20%;
+            margin-right:20%;
+            margin-top:40px;
+            margin-bottom:40px;
+            padding:30px;
+        }
+
+        /*Styles the form for the user to input their information.*/
+        form
+        {
+            width:60%;
+            margin-left:auto;
+            margin-right:auto;
+            color:white;
+            font-size:20px;
+            text-align:center;
+            background-color:rgb(1, 92, 1);
+            font-family:expend-bold, Verdana, Geneva, Tahoma, sans-serif;
+            border:2px solid white;
+        }
+
+    </style>
+</head>
+
+<body>
+<header>
+    <!--Website logo & slogan. Part of template.-->
+        <a href="https://progressiveoverlearn.wordpress.com/"><img class="logo" src="images/progressiveoverlearn.png" alt="Progressive Overlearn"></a>
+        <h1>Exercise Yourself For A Stronger Future</h1>
+
+    <!--Navigation set into 1 Table for organization & styling. Part of template.-->
+    <table style="width:100%; text-align:center">
+        <tr>
+            <ul class="navigationbar">
+            <td><li class="navoptions"><a href="home.html">Home</a></li></td>
+            <td><li class="navoptions"><a href="aboutme.html">About Me</a></li></td>
+            <td><li class="navoptions"><a href="printerhelpguide.html">Printer Help Guide</a></li></td>
+            <td><li class="navoptions"><a href="printerflowchart.html">Printer Flowchart</a></li></td>
+            <td><li class="navoptions"><a href="printerfaqs.html">Printer FAQs</a></li></td>
+            <td><li class="navoptions"><a href="signup.html">Sign Up</a></li></td>
+            </ul>
+        </tr>
+    </table>
+</header>
+
+<body>
+
+<h2 id="currentpage">Interested in subscribing for my services? Sign up here.</h2>
+<!--Form for user to input their information.-->
+<form name="regFORM" method="POST" action="database_INSERT.php">
+    First Name:
+    <br><input type="text" name="firstname">
+    <hr>
+    Last Name:
+    <br><input type="text" name="lastname">
+    <hr>
+    Password:
+    <br><input type="password" name="password">
+    <hr>
+    Choose Your Preferred color(s):
+    <br><input type="checkbox" name="color" value="blue" checked="checked"> Blue <input type="checkbox" name="color" value="red"> Red <input type="checkbox" name="color" value="pink"> Pink
+    <hr>
+    Gender:
+    <br><input type="radio" name="gender" value="m">Male
+    <input name="gender" type="radio" value="f">Female
+    <input type="radio" name="gender" value="o">Other
+    <hr>
+    Choose your subscription:
+    <br>
+    <select name="subscription">
+        <option value="$4.99">$4.99</option>
+        <option value="$7.99">$7.99</option>
+        <option value="$10.99">$10.99</option>
+    </select>
+    <hr>
+    <input type="submit" value="Submit Here">
+</form>
+
+    <!--Footer across all pages. Part of template.-->
+    <footer>
+        <p>Progressive Overlearn © 2025. All rights reserved.</p>
+    </footer>
+</body>
+</html>

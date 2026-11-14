@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printer Help Guide</title>
+    <style>
+
+        /*Fonts used across all pages. Part of template.*/
+        @font-face 
+        {
+            font-family: 'EXPEND-Bold';
+            src: url(fonts/EXPEND-Bold.otf);
+        }
+        @font-face 
+        {
+            font-family: 'Thamire';
+            src: url(fonts/Thamire.otf);
+        }
+
+        @font-face 
+        {
+            font-family: 'Shield';
+            src: url(fonts/Shield.otf);
+        }
+
+        /*Styles the header across all pages. Part of template.*/
+        header
+        {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border: 2px solid white;
+            border-radius:2px;
+        }
+
+        header h1 /*Styles the slogan. Part of template.*/
+        {
+            color: white;
+            font-size: 36px;
+            text-align:center;
+            font-family:EXPEND-bold, Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        header td /*Styles the navigation bar across all pages. Part of template.*/
+        {
+            background-color: black;
+            color: white;
+            border: 2px solid white;
+            border-radius:2px;
+        }
+
+        .logo /*Styles the logo across all pages. Part of template.*/
+        {
+            float:left;
+            margin-right:20px;
+        }
+        
+        body /*Designates the background image for the website. Part of template.*/
+        {
+            background-image: url("images/websitebackground2.png");
+        }
+
+        a /*Indicate places to where links are in green. Part of template.*/
+        {
+            color: rgb(77, 224, 77);
+            text-decoration: none;
+        }
+        a:hover /*Changes color of links when hovered over. Part of template.*/
+        {
+            color:black;
+            background-color: goldenrod;
+        }
+        li /*Styles bullet points of FAQs table*/
+        {
+            text-align: left;
+        }
+        .navigationbar /*Styles the navigation bar across all pages. Part of template.*/
+        {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navoptions /*Styles the content inside the navigation bar. Part of template.*/
+        {
+            font-size:24px;
+            display: inline;
+            text-align:center;
+            color: white;
+            color: rgb(77, 224, 77);
+            text-decoration: none;
+            font-family:EXPEND-bold, Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        footer /*Makes the footer sticky as you scroll down on the page. Part of template.*/
+        {
+            position: sticky;
+            bottom:0;
+            font-size: 16px;
+            padding:2px;
+            color:white;
+            background-color:black;
+            border: 2px solid white;
+            text-align:center;
+            font-family:EXPEND-bold, Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /*Styles the heading of the current page*/
+        #currentpage
+        {
+            text-align:center;
+            font-size:24px;
+            font-family:EXPEND-bold, Verdana, Geneva, Tahoma, sans-serif;
+            color:white;
+            background-color:black;
+            border:2px dotted white;
+            border-radius:4px;
+            margin-left:20%;
+            margin-right:20%;
+            margin-top:40px;
+            margin-bottom:40px;
+            padding:30px;
+        }
+
+    </style>
+</head>
+
+<body>
+<header>
+    <!--Website logo & slogan. Part of template.-->
+        <a href="https://progressiveoverlearn.wordpress.com/"><img class="logo" src="images/progressiveoverlearn.png" alt="Progressive Overlearn"></a>
+        <h1>Exercise Yourself For A Stronger Future</h1>
+
+    <!--Navigation set into 1 Table for organization & styling. Part of template.-->
+    <table style="width:100%; text-align:center">
+        <tr>
+            <ul class="navigationbar">
+            <td><li class="navoptions"><a href="home.html">Home</a></li></td>
+            <td><li class="navoptions"><a href="aboutme.html">About Me</a></li></td>
+            <td><li class="navoptions"><a href="printerhelpguide.html">Printer Help Guide</a></li></td>
+            <td><li class="navoptions"><a href="printerflowchart.html">Printer Flowchart</a></li></td>
+            <td><li class="navoptions"><a href="printerfaqs.html">Printer FAQs</a></li></td>
+            <td><li class="navoptions"><a href="signup.html">Sign Up</a></li></td>
+            </ul>
+        </tr>
+    </table>
+</header>
+
+<body>
+
+    <h1 id="currentpage">Printer Help Guide - Brother Printer</h1>
+    <iframe src="documents/printerhelpguide.pdf" width="100%" height="1000px"></iframe> <!--Embeds the PDF file into the webpage.-->
+
+    <!--Footer across all pages. Part of template.-->
+    <footer>
+        <p>Progressive Overlearn © 2025. All rights reserved.</p>
+    </footer>
+</body>
+</html>
